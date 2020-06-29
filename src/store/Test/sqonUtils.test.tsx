@@ -44,7 +44,7 @@ describe('SqonUtils', () => {
   });
 
   describe('shapeFileTypeSqonFiltersForParticipantType', () => {
-    it('should transform a file centric sqon into a participant centric sqon', async () => {
+    it('should transform a file centric sqon into a participant centric sqon', () => {
       expect(shapeFileTypeSqonFiltersForParticipantType(fileCentricSqon)).toEqual([
         { op: 'in', content: { field: 'files.file_format', value: ['fastq'] } },
         { op: 'in', content: { field: 'biospecimens.source_text_tissue_type', value: ['Normal'] } },

@@ -23,10 +23,8 @@ export const shortUrlApi = getApplicationEnvVar('SHORTURL_API');
 export const shortUrlResolveRoot = getApplicationEnvVar('SHORTURL_RESOLVE_ROOT');
 
 export const arrangerApiRoot = getApplicationEnvVar('ARRANGER_API');
-export const kfArrangerApiRoot = getApplicationEnvVar('KF_ARRANGER_API');
 
 export const arrangerProjectId = getApplicationEnvVar('PROJECT_ID');
-export const arrangerApiProjectId = getApplicationEnvVar('PROJECT_API_ID');
 
 export const personaApiRoot: string =
   personaApiOverride || getApplicationEnvVar('PERSONA_API') || '';

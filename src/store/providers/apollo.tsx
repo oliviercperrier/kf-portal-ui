@@ -7,13 +7,13 @@ import {
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
 
-import { kfArrangerApiRoot, arrangerApiProjectId } from 'common/injectGlobals';
+import { arrangerApiRoot, arrangerProjectId } from 'common/injectGlobals';
 import { IProvider } from 'store/providers';
 
 import { InMemoryCache } from '@apollo/client';
 
 const httpLink = createHttpLink({
-  uri: `${kfArrangerApiRoot}${arrangerApiProjectId}/graphql`,
+  uri: `${arrangerApiRoot}${arrangerProjectId}/graphql`,
 });
 
 const getAuthLink = (userToken: string) =>

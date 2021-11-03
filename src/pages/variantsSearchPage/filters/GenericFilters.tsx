@@ -12,6 +12,7 @@ import styles from './Filters.module.scss';
 
 type OwnProps = {
   field: string;
+  test: string;
   mappingResults: MappingResults;
 };
 
